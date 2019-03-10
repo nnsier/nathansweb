@@ -1,28 +1,43 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import {BrowserRouter as Router, Route, Link} from "react-router-dom";
+import HomePage from './Components/HomePage/HomePage';
+import Contact from './Components/Contact/Contact';
+import About from './Components/About/About';
+import Work from './Components/Work/Work';
 
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
-    );
-  }
-}
+const App = props => (
+  <Router>
+    <div className="container">
+      <header>
+        <ul>
+          <li>
+            <Link to="/about">About</Link>
+          </li>
+          <li>
+            <Link to="/work">Work</Link>
+          </li>
+          <li>
+            <Link to="/contact">Contact</Link>
+          </li>
+        </ul>
+      </header>
+      <Route exact path='/' component={HomePage} />
+      <Route exact path='/contact' component={Contact} />
+      <Route exact path='/work' component={Work} />
+      <Route exact path='/about' component={About} />
+      <footer>
+      <ul>
+        <li><a href="https://github.com/nathSierra"><i class="fab fa-github"></i></a></li>
+        <li><a href="https://www.linkedin.com/in/nathan-sierra-64752416b/"><i class="fab fa-linkedin-in"></i></a></li>
+      </ul>
+      </footer>
+    </div>
+  </Router>
+    
+)
+
+
+  
+
 
 export default App;

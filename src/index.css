@@ -7,8 +7,149 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+.container {
+  max-width: 960px;
+  min-height: 70vh;
+  margin: 60px aut;
+  padding: 100px 5% 80px;
+}
+
+header {
+  display: flex;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  position: fixed;
+  flex-wrap: wrap;
+  top: 0px;
+  width: 100%;
+}
+
+footer {
+  display: flex;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 0;
+}
+
+footer > ul {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  margin: 0 4em;
+}
+
+footer > ul > li {
+  margin: 40px;
+}
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+a:link {
+  text-decoration: none;
+  color: black;
+}
+
+header > ul > li > a {
+  position: relative;
+  color: black;
+}
+
+header > ul > li > a:hover {
+  color: black;
+}
+
+header > ul > li > a:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #000;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+header > ul > li > a:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+
+a:visited {
+  text-decoration: none;
+  color: black;
+}
+
+h1,h2,h3,h4 {
+  font-family: 'ZCOOL QingKe HuangYou', cursive;
+}
+
+.flex-container {
+  display: flex;
+}
+
+
+ul > li {
+  display: inline;
+  font-family: 'ZCOOL QingKe HuangYou', cursive;
+  padding: 0px;
+}
+ul {
+  padding: 0px;
+}
+
+footer > ul > li {
+
+    padding: 20px 20px;
+    font-size: 2em;
+    display: inline;
+    font-family: 'ZCOOL QingKe HuangYou', cursive;
+  
+}
+
+
+header ul > li {
+  padding: 10px 16px;
+  font-size: 2em;
+}
+
+p {
+  font-family: 'Oswald', sans-serif;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+
+.block{
+  height: 50vh;
+}
+
+.block2{
+  height: 200vh;
+}
+
+.info{
+  height: 40vh;
+}
+
+.main{
+  height: 100vh;
+  background-color: #9999cc;
+}
+
+.large-text {
+  font-size: 12em;
 }
