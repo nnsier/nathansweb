@@ -7,7 +7,7 @@ import Work from './Components/Work/Work';
 
 const App = props => (
   <Router>
-    <div className="container">
+    <body className="container">
       <header>
         <ul>
           <li>
@@ -21,23 +21,21 @@ const App = props => (
           </li>
         </ul>
       </header>
-      <Route exact path='/' component={HomePage} />
-      <Route exact path='/contact' component={Contact} />
-      <Route exact path='/work' component={Work} />
-      <Route exact path='/about' component={About} />
+      <main className="siteContent">
+        <Route exact path='/' component={HomePage} />
+        <Route exact path='/contact' component={Contact} />
+        <Route exact path='/work' component={Work} />
+        <Route exact path='/about' component={About} />
+      </main>
       <footer>
       <ul>
         <li><a href="https://github.com/nathSierra"><i class="fab fa-github"></i></a></li>
         <li><a href="https://www.linkedin.com/in/nathan-sierra-64752416b/"><i class="fab fa-linkedin-in"></i></a></li>
       </ul>
       </footer>
-    </div>
+    </body>
   </Router>
     
 )
-
-
-  
-
 
 export default App;
