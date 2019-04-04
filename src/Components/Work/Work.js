@@ -5,12 +5,12 @@ const Work = () => (
     <h2>Resume</h2>
     <p>I graduated from Southern Illinois University Edwardsville in 2015.</p>
     <p>While in university I worked for my school newspaper, the Alestle, as an editor.</p>
-    <p>I worked at a coffee shop called Sacred Grounds for a year,</p>
-    <p>after that I found myself working seasonal jobs for a while.</p>
+    <p>I worked at Sacred Grounds Cafe for a year,</p>
+    <p>after which I found myself working seasonal jobs for a while.</p>
     <p>I also worked as an English teacher in Brno for a little bit.</p>
     <p>Years 2018 and 2019 found me working in Decatur at Ford Fry restaurant No.246 until I started my web development class.</p>
     <hr/> 
-    <p>As an aside: Check out some of my work on Github! When I'm particularly fond of schoolwork I've done I'll post it here, too.</p>
+    <p>As an aside: Check out some of my work on Github! So far, this is a curated list of schoolwork I completed that I like, however I'll update it as I do my own solo projects now I'm out of the GA Tech nest.</p>
     <h3>Works I'm proud of:</h3>
     <ul>
       <li>

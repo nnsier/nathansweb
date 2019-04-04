@@ -22,10 +22,9 @@ const App = props => (
         </ul>
       </header>
       <main className="siteContent">
-        <Route exact path='/' component={HomePage} />
         <Route exact path='/contact' component={Contact} />
         <Route exact path='/work' component={Work} />
-        <Route exact path='/about' component={About} />
+        <Route path='/about' component={About} />
       </main>
       <footer>
       <ul>
